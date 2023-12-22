@@ -16,6 +16,9 @@ int addTwoNumbers(int a, int b) {
 
 int addTwoNumbersArrow(int a, int b) => a + b;
 
+/**
+ * Para utilizar parametros opcionales los mismos se pasan con [].
+ */
 int addTwoNumbersOptional(int a, [int? b]) {
   b ??= 0;
   return a + b;
