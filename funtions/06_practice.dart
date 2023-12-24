@@ -33,6 +33,10 @@ void wrileLine(String message) {
  */
 String read() => stdin.readLineSync() ?? '';
 
+/**
+ * [required double] salario
+ * Set user salary and deductions.
+ */
 void setUser({
   required double salario,
 }) {

@@ -15,7 +15,7 @@ void saludar3(String message,
   print('$message, $name - $age');
 }
 
-void main(List<String> args) {
+void main() {
   saludar('Hola');
   saludar2(message: 'Hello!');
   saludar3('Hey!', name: 'Tony');
