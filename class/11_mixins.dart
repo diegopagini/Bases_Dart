@@ -14,9 +14,9 @@ mixin Logger2 {
 }
 
 abstract class Astro with Logger {
-  String? nombre;
+  String nombre;
 
-  Astro() {
+  Astro(this.nombre) {
     imprimir('-- Init del Astro --');
   }
 
@@ -26,9 +26,7 @@ abstract class Astro with Logger {
 }
 
 class Asteroide extends Astro with Logger, Logger2 {
-  String? nombre;
-
-  Asteroide(this.nombre) {
+  Asteroide(String name) : super(name) {
     // imprimir('Soy $nombre');
     imprimir2('Soy $nombre');
   }
