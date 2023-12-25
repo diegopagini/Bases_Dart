@@ -1,14 +1,15 @@
 class Persona {
   // Campos o propiedades
   String? nombre;
-  int? edad;
-  String _bio = 'Hola, soy una propiedad privada.';
+  int? edad; // Por defecto todas son públicas.
+  String _bio =
+      'Hola, soy una propiedad privada.'; // con _ se transforman en privadas.
 
   // Get y sets
   // String get bio {
   //   return _bio.toUpperCase();
   // }
-  String get bio => _bio.toUpperCase();
+  String get bio => _bio.toUpperCase(); // Getters sin ();
 
   // set bio( String texto ) {
   //   _bio = texto;
@@ -30,6 +31,11 @@ class Persona {
   Persona.persona40(String nombre) {
     this.edad = 40;
     this.nombre = nombre;
+  }
+
+  Persona.conNombre(int edad) {
+    this.edad = edad;
+    this.nombre = 'Sin nombre';
   }
 
   // métodos

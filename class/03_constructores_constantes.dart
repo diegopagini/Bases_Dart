@@ -10,8 +10,9 @@ void main() {
   final sanFrancisco2 = new Location(18.2323, 39.9001);
   final sanFrancisco3 = new Location(18.2323, 39.9001);
 
-  // print( sanFrancisco1 == sanFrancisco2 ); // False
-  // print( sanFrancisco2 == sanFrancisco3 ); // False
+  print(sanFrancisco1 == sanFrancisco2); // false
+  print(sanFrancisco2 ==
+      sanFrancisco3); // false Porque ocupal lugares en memoria diferentes.
 
   const sanFrancisco4 = const Location(18.2323, 39.9000);
   const sanFrancisco5 = const Location(18.2323, 39.9001);
@@ -19,7 +20,8 @@ void main() {
 
   const berlin = const Location(18.2323, 39.9001);
 
-  // print( sanFrancisco4 == sanFrancisco5 ); // False
-  print(sanFrancisco5 == sanFrancisco6); // true?
-  print(berlin == sanFrancisco6); // true?
+  print(sanFrancisco4 == sanFrancisco5); // false
+  print(sanFrancisco5 ==
+      sanFrancisco6); // true Porque estan inicializados como constantes, apuntan al mismo lugar en memoria.
+  print(berlin == sanFrancisco6); // true
 }

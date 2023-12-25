@@ -10,8 +10,9 @@ class Cuadrado {
 
   // Cuadrado( this.lado, this.area );
 
-  Cuadrado(int lado)
-      : this.lado = lado,
+  Cuadrado(
+      int lado) // Para setear valores en el momento en el que se inicializa el constructor. No es lo mismo que lo de la linea 6.
+      : this.lado = lado, // : es la clave.
         this.area = lado * lado;
 }
 

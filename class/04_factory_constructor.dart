@@ -36,5 +36,8 @@ class Rectangulo {
 void main() {
   final figura = new Rectangulo(10, 15);
 
-  print(figura);
+  print(figura); // {base: 10, altura: 15, area: 150, tipo: Rectángulo}
+
+  final cuadrado = new Rectangulo(20, 20);
+  print(cuadrado); // {base: 20, altura: 20, area: 400, tipo: Cuadrado}
 }
