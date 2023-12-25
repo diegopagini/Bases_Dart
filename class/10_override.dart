@@ -25,6 +25,4 @@ void main() {
   final pedro = new Cliente(33, 'Pedro');
 
   pedro.imprimirNombre();
-
-  // pedro.ordenes
 }
