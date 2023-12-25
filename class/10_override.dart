@@ -21,7 +21,7 @@ class Cliente extends Persona {
   }
 }
 
-main(List<String> args) {
+void main() {
   final pedro = new Cliente(33, 'Pedro');
 
   pedro.imprimirNombre();

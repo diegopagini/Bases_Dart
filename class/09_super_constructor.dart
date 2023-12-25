@@ -15,7 +15,7 @@ class Cliente extends Persona {
       : super(nombreActual, edadActual);
 }
 
-main(List<String> args) {
+void main() {
   final pedro = new Cliente(33, 'Pedro');
 
   pedro.imprimirNombre();

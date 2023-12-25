@@ -34,6 +34,6 @@ class Asteroide extends Astro with Logger, Logger2 {
   }
 }
 
-main() {
+void main() {
   final ceres = new Asteroide('Ceres');
 }

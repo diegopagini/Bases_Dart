@@ -1,4 +1,5 @@
 abstract class Vehiculo {
+  // No se pueden crear nuevas instancias de clases abstractas. Solo se utilizan para poder extender de ellas.
   bool encedido = false;
 
   void encender() {
@@ -11,20 +12,21 @@ abstract class Vehiculo {
     print('Vehículo apagado');
   }
 
-  bool revisarMotor();
+  bool
+      revisarMotor(); // Deja a discrecion de otra clase la implementacion del metodo.
 }
 
 class Carro extends Vehiculo {
   int kilometraje = 0;
 
-  @override
+  @override // no es obligatorio el uso de override. Pero es una buena pracica.
   bool revisarMotor() {
     print('Motor OK!');
     return true;
   }
 }
 
-main() {
+void main() {
   final ford = new Carro();
 
   ford.encender();

@@ -16,7 +16,7 @@ class Carro extends Vehiculo {
   int kilometraje = 0;
 }
 
-main() {
+void main() {
   final ford = new Carro();
 
   ford.encender();
