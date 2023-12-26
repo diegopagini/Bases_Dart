@@ -20,4 +20,16 @@ void main() {
 
   people.removeWhere((key, value) => key == 'country');
   print('removeWhere: ${people}'); // {name: Diego, lastname: Pagini, age: 32}
+
+  people.forEach((String key, Object value) {
+    print('key: $key, value: $value');
+  });
+  // key: name, value: Diego
+  // key: lastname, value: Pagini
+  // key: age, value: 32
+
+  final Map<String, String> newMap = people.map((String key, Object value) {
+    return MapEntry(key, value.toString().toUpperCase());
+  });
+  print(newMap); // {name: DIEGO, lastname: PAGINI, age: 32}
 }
